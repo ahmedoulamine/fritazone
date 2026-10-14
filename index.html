@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frita Zone | Burgers, pizzas et tacos</title>
+  <meta name="description" content="Découvrez le menu Frita Zone : burgers, pizzas, tacos et frites. Consultez nos prix et commandez sur WhatsApp.">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navigation" aria-label="Navigation principale">
+      <a class="brand" href="#accueil" aria-label="Frita Zone &#8212; Accueil">
+        <img src="images.frita/Frita Logo.jpg" alt="" width="44" height="44">
+        <span>Frita Zone</span>
+      </a>
+      <a class="nav-link active" href="#accueil" aria-current="page">Accueil</a>
+      <a class="nav-link" href="#menu">Menu</a>
+      <a class="nav-link" href="#contact">Contact</a>
+      <a class="cart" href="#commande" aria-label="Ouvrir le panier">
+        <svg viewBox="0 0 24 24" width="32" height="32" aria-hidden="true"><path d="M2 3h3l3 12h11l3-9H6" fill="currentColor"/><circle cx="9" cy="20" r="2" fill="currentColor"/><circle cx="18" cy="20" r="2" fill="currentColor"/></svg>
+      </a>
+    </nav>
+  </header>
+  <main id="accueil" class="background" aria-label="Bienvenue chez Frita Zone">
+    <div class="hero-content">
+    </div>
+  </main>
+  <section id="menu" class="menu-section" aria-labelledby="menu-title">
+    <h1 id="menu-title">Notre Menu</h1>
+    <nav class="menu-categories" aria-label="Catégories du menu">
+      <a class="menu-category" href="#pizzas">
+        <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M12 55 24 8c18 3 29 14 32 32Z" fill="currentColor"/><path d="M24 8c18 3 29 14 32 32" fill="none" stroke="currentColor" stroke-width="9" stroke-linecap="round"/><g fill="#fff7ed"><circle cx="29" cy="25" r="3"/><circle cx="25" cy="39" r="3"/><circle cx="40" cy="35" r="3"/></g></svg>
+        <span>Pizzas</span>
+      </a>
+      <a class="menu-category" href="#burgers">
+        <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M8 28a24 24 0 0 1 48 0Z" fill="currentColor"/><rect x="7" y="32" width="50" height="9" rx="4" fill="currentColor"/><path d="M8 45h48v3a10 10 0 0 1-10 10H18A10 10 0 0 1 8 48Z" fill="currentColor"/><g fill="#fff7ed"><circle cx="23" cy="18" r="2"/><circle cx="34" cy="12" r="2"/><circle cx="43" cy="20" r="2"/></g></svg>
+        <span>Burgers</span>
+      </a>
+      <a class="menu-category" href="#frites">
+        <svg viewBox="0 0 64 64" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="7"><path d="m17 34-3-23M27 34V5M37 34V10M47 34l4-25"/></g><path d="M9 28h46l-7 31H16Z" fill="currentColor"/><path d="M25 43h14" stroke="#fff7ed" stroke-width="4" stroke-linecap="round"/></svg>
+        <span>Frites</span>
+      </a>
+      <a class="menu-category" href="#tacos">
+        <svg viewBox="0 0 64 64" aria-hidden="true"><rect x="10" y="18" width="44" height="30" rx="10" fill="currentColor" transform="rotate(-20 32 33)"/><g stroke="#fff7ed" stroke-width="3" stroke-linecap="round"><path d="m22 28 6 16M32 24l6 16M42 21l5 13"/></g></svg>
+        <span>Tacos</span>
+      </a>
+    </nav>
+    <div class="menu-group" id="pizzas">
+      <h3>Nos Pizzas</h3>
+      <div class="product-grid">
+        <figure class="product-card">
+          <img src="images.frita/pizzzza.webp" alt="Pizza au fromage, charcuterie et tomates." loading="lazy" decoding="async">
+          <figcaption>
+            <div class="product-heading"><h4>Pizza Gourmande</h4><span class="product-price">50 DH</span></div>
+            <p>Pizza au fromage, charcuterie et tomates.</p>
+            <button class="add-to-cart" type="button" data-product="0" data-name="Pizza Gourmande" data-price="50">Ajouter au panier</button>
+          </figcaption>
+        </figure>
+        <figure class="product-card">
+          <img src="images.frita/pizza.webp" alt="Pizza au poulet et oignons rouges." loading="lazy" decoding="async">
+          <figcaption>
+            <div class="product-heading"><h4>Pizza Poulet Gourmand</h4><span class="product-price">50 DH</span></div>
+            <p>Pizza au poulet et oignons rouges.</p>
+            <button class="add-to-cart" type="button" data-product="1" data-name="Pizza Poulet Gourmand" data-price="50">Ajouter au panier</button>
+          </figcaption>
+        </figure>
+        <figure class="product-card">
+          <img src="images.frita/pizzza.webp" alt="Pizza au fromage crémeux et roquette." loading="lazy" decoding="async">
+          <figcaption>
+            <div class="product-heading"><h4>Pizza Crémeuse &amp; Roquette</h4><span class="product-price">55 DH</span></div>
+            <p>Pizza au fromage crémeux et roquette.</p>
+            <button class="add-to-cart" type="button" data-product="2" data-name="Pizza Crémeuse &amp; Roquette" data-price="55">Ajouter au panier</button>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+    <div class="menu-group" id="burgers">
+      <h3>Nos Burgers</h3>
+      <div class="product-grid">
+        <figure class="product-card">
+          <img src="images.frita/burrger.webp" alt="Steak, fromage fondant et &#339;uf au plat." loading="lazy" decoding="async">
+          <figcaption>
+            <div class="product-heading"><h4>Burger Royal &#339;uf</h4><span class="product-price">45 DH</span></div>
+            <p>Steak, fromage fondant et &#339;uf au plat.</p>
+            <button class="add-to-cart" type="button" data-product="3" data-name="Burger Royal &#339;uf" data-price="45">Ajouter au panier</button>
+          </figcaption>
+        </figure>
+        <figure class="product-card">
+          <img src="images.frita/burgerrr.webp" alt="Burger au poulet croustillant avec frites." loading="lazy" decoding="async">
+          <figcaption>
+            <div class="product-heading"><h4>Crispy Chicken avec frites</h4><span class="product-price">40 DH</span></div>
+            <p>Burger au poulet croustillant avec frites.</p>
+            <button class="add-to-cart" type="button" data-product="4" data-name="Crispy Chicken avec frites" data-price="40">Ajouter au panier</button>
+          </figcaption>
+        </figure>
+        <figure class="product-card">
+          <img src="images.frita/burgger.webp" alt="Double steak et fromage fondant." loading="lazy" decoding="async">
+          <figcaption>
+            <div class="product-heading"><h4>Double Cheese Gourmand</h4><span class="product-price">55 DH</span></div>
+            <p>Double steak et fromage fondant.</p>
+            <button class="add-to-cart" type="button" data-product="5" data-name="Double Cheese Gourmand" data-price="55">Ajouter au panier</button>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+    <div class="menu-group" id="frites">
+      <h3>Nos Frites</h3>
+      <div class="product-grid">
+        <figure class="product-card">
+          <img src="images.frita/friitts.webp" alt="Frites croustillantes accompagnées de ketchup." loading="lazy" decoding="async">
+          <figcaption>
+            <div class="product-heading"><h4>Frites avec ketchup</h4><span class="product-price">12 DH</span></div>
+            <p>Frites croustillantes accompagnées de ketchup.</p>
+            <button class="add-to-cart" type="button" data-product="6" data-name="Frites avec ketchup" data-price="12">Ajouter au panier</button>
+          </figcaption>
+        </figure>
+        <figure class="product-card">
+          <img src="images.frita/friiiit.webp" alt="Frites dorées aux herbes." loading="lazy" decoding="async">
+          <figcaption>
+            <div class="product-heading"><h4>Frites aux herbes</h4><span class="product-price">15 DH</span></div>
+            <p>Frites dorées aux herbes.</p>
+            <button class="add-to-cart" type="button" data-product="7" data-name="Frites aux herbes" data-price="15">Ajouter au panier</button>
+          </figcaption>
+        </figure>
+        <figure class="product-card">
+          <img src="images.frita/friiiiiit.webp" alt="Frites croustillantes aux épices." loading="lazy" decoding="async">
+          <figcaption>
+            <div class="product-heading"><h4>Frites aux épices</h4><span class="product-price">15 DH</span></div>
+            <p>Frites croustillantes aux épices.</p>
+            <button class="add-to-cart" type="button" data-product="8" data-name="Frites aux épices" data-price="15">Ajouter au panier</button>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+    <div class="menu-group" id="tacos">
+      <h3>Nos Tacos</h3>
+      <div class="product-grid">
+        <figure class="product-card">
+          <img src="images.frita/tacos.webp" alt="Tacos au poulet et sauce onctueuse." loading="lazy" decoding="async">
+          <figcaption>
+            <div class="product-heading"><h4>Tacos Poulet</h4><span class="product-price">30 DH</span></div>
+            <p>Tacos au poulet et sauce onctueuse.</p>
+            <button class="add-to-cart" type="button" data-product="9" data-name="Tacos Poulet" data-price="30">Ajouter au panier</button>
+          </figcaption>
+        </figure>
+        <figure class="product-card">
+          <img src="images.frita/tacoss.webp" alt="Tacos grillé avec frites et sauces." loading="lazy" decoding="async">
+          <figcaption>
+            <div class="product-heading"><h4>Menu Tacos avec frites</h4><span class="product-price">40 DH</span></div>
+            <p>Tacos grillé avec frites et sauces.</p>
+            <button class="add-to-cart" type="button" data-product="10" data-name="Menu Tacos avec frites" data-price="40">Ajouter au panier</button>
+          </figcaption>
+        </figure>
+        <figure class="product-card">
+          <img src="images.frita/tacossss.webp" alt="Tacos au poulet croustillant et frites." loading="lazy" decoding="async">
+          <figcaption>
+            <div class="product-heading"><h4>Tacos Poulet Croustillant avec frites</h4><span class="product-price">40 DH</span></div>
+            <p>Tacos au poulet croustillant et frites.</p>
+            <button class="add-to-cart" type="button" data-product="11" data-name="Tacos Poulet Croustillant avec frites" data-price="40">Ajouter au panier</button>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+  <dialog id="commande" class="cart-dialog" aria-labelledby="cart-title">
+    <div class="cart-layout">
+      <aside class="cart-extras" aria-labelledby="extras-title">
+        <h2 id="extras-title">Voulez-vous des extras ?</h2>
+        <div id="extras-list"></div>
+      </aside>
+      <div class="cart-panel">
+        <header class="cart-panel-header">
+          <h2 id="cart-title">Voici ce que vous avez choisi : (<span id="chosen-count">0</span>)</h2>
+          <button id="close-cart" type="button" aria-label="Fermer le panier">&times;</button>
+        </header>
+        <div class="cart-scroll">
+          <p id="cart-empty">Votre panier est vide. Choisissez vos produits dans le menu.</p>
+          <ul id="cart-items"></ul>
+        </div>
+        <div class="cart-summary">
+          <p class="cart-total">Sous-total <strong id="cart-total">0 DH</strong></p>
+          <p class="delivery-note">Retrait ou livraison à confirmer avec Frita Zone.</p>
+          <button id="checkout-cart" type="button" disabled>Commander 0 DH</button>
+          <button id="continue-shopping" type="button">Continuer à commander</button>
+        </div>
+      </div>
+    </div>
+  </dialog>
+  <dialog id="confirmation" class="confirmation-dialog" aria-labelledby="confirmation-title">
+    <header class="confirmation-header">
+      <h2 id="confirmation-title">Détails de votre commande</h2>
+      <p>Saisissez vos informations</p>
+      <button id="close-confirmation" type="button" aria-label="Fermer la confirmation">&times;</button>
+    </header>
+    <form id="confirmation-form" class="confirmation-form">
+      <ul id="confirmation-items"></ul>
+      <p class="confirmation-total">Sous-total <strong id="confirmation-subtotal"></strong></p>
+      <p class="confirmation-total">Livraison <span id="delivery-cost">&#192; emporter</span></p>
+      <p class="confirmation-total grand-total">Total des produits <strong id="confirmation-total"></strong></p>
+      <fieldset class="delivery-options">
+        <legend>Méthode de livraison</legend>
+        <label><input type="radio" name="delivery" value="pickup" checked> &#192; emporter</label>
+        <label><input type="radio" name="delivery" value="delivery"> Livraison, frais à confirmer avec le snack</label>
+      </fieldset>
+      <div class="customer-fields">
+        <label>Nom complet<input id="customer-name" name="customerName" autocomplete="name" required maxlength="100"></label>
+        <label>Téléphone<input id="customer-phone" name="customerPhone" type="tel" autocomplete="tel" required pattern="[+0-9 ()-]{8,20}" title="Saisissez votre numéro de téléphone (8 à 20 caractères)." maxlength="20"></label>
+      </div>
+      <label id="address-field" hidden>Adresse de livraison<textarea id="customer-address" name="customerAddress" autocomplete="street-address" maxlength="300" rows="2"></textarea></label>
+      <label>Instructions / Allergies (facultatif)<textarea id="customer-notes" name="customerNotes" maxlength="500" rows="3" placeholder="Précisez vos instructions ou allergies"></textarea></label>
+      <p>La disponibilité et les éventuels frais de livraison seront confirmés par Frita Zone.</p>
+      <button class="confirm-order-button" type="submit">Confirmer et ouvrir WhatsApp</button>
+      <p class="whatsapp-help">Le message sera préparé dans WhatsApp. Appuyez ensuite sur Envoyer pour transmettre votre commande.</p>
+      <p id="confirmation-status" role="status"></p>
+      <button id="back-to-cart" type="button">Retour au panier</button>
+    </form>
+  </dialog>
+  <button id="floating-cart" class="floating-cart" type="button" aria-haspopup="dialog" aria-controls="commande"><span aria-hidden="true">&#128722;</span> Votre Panier <span id="floating-count">0</span></button>
+  <section id="contact" class="contact-section" aria-labelledby="contact-title">
+    <div class="contact-layout">
+      <div class="contact-card">
+        <p class="contact-eyebrow">Venez nous retrouver</p>
+        <h2 id="contact-title">Frita Zone</h2>
+        <address>
+          <p>F4FC+8GC, Taroudant</p>
+          <a href="tel:+212638295783">0638295783</a>
+        </address>
+        <div class="contact-actions">
+          <a class="direction-link" href="https://www.google.com/maps/search/?api=1&amp;query=Frita%20Zone%2C%20F4FC%2B8GC%2C%20Taroudant" target="_blank" rel="noopener noreferrer">Itinéraire</a>
+          <a class="whatsapp-link" href="https://wa.me/212638295783?text=Bonjour%20Frita%20Zone%2C%20je%20souhaite%20avoir%20des%20informations." target="_blank" rel="noopener noreferrer">WhatsApp</a>
+        </div>
+      </div>
+      <div class="contact-map">
+        <iframe title="Emplacement de Frita Zone à Taroudant sur Google Maps" src="https://www.google.com/maps?q=Frita%20Zone%2C%20F4FC%2B8GC%2C%20Taroudant&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=Frita%20Zone%2C%20F4FC%2B8GC%2C%20Taroudant" target="_blank" rel="noopener noreferrer">Ouvrir dans Google Maps</a>
+      </div>
+    </div>
+  </section>
+  <footer class="site-footer">
+    <div class="footer-layout">
+      <div>
+        <a class="footer-brand" href="#accueil"><img src="images.frita/Frita Logo.jpg" alt="" width="76" height="76"><span>Frita Zone</span></a>
+        <p>&copy; 2026 Frita Zone. Tous droits réservés.</p>
+      </div>
+      <div>
+        <h2>Contactez-nous</h2>
+        <address><p>F4FC+8GC, Taroudant</p><a href="tel:+212638295783">0638295783</a></address>
+      </div>
+    </div>
+  </footer>
+  <a class="whatsapp-floating" href="https://wa.me/212638295783?text=Bonjour%20Frita%20Zone%2C%20je%20souhaite%20avoir%20des%20informations." target="_blank" rel="noopener noreferrer" aria-label="Contacter Frita Zone sur WhatsApp">
+    <svg viewBox="0 0 32 32" width="34" height="34" aria-hidden="true"><path d="M27 15.5a11 11 0 0 1-16.5 9.5L5 27l1.8-5.5A11 11 0 1 1 27 15.5Z" fill="none" stroke="currentColor" stroke-width="2.3"/><path d="M12 9c-1 0-2 2-1 5 1 4 5 7 8 7 2 0 3-2 2-3l-3-1-1 1c-2-1-4-3-4-5l1-1-1-3Z" fill="currentColor"/></svg>
+  </a>
+  <p id="cart-status" class="cart-status" role="status"></p>
+  <script src="index.js" defer></script>
+</body>
+</html>
