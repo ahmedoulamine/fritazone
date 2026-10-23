@@ -1,0 +1,25 @@
+{
+  "name": "Frita Zone - Fast Food Taroudant",
+  "short_name": "Frita Zone",
+  "description": "Burgers, pizzas, tacos et frites croustillantes à Taroudant. Commandez sur WhatsApp.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#850006",
+  "theme_color": "#850006",
+  "lang": "fr",
+  "icons": [
+    {
+      "src": "images.frita/Frita Logo.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "images.frita/Frita Logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

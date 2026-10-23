@@ -3,9 +3,45 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Frita Zone | Burgers, pizzas et tacos</title>
-  <meta name="description" content="Découvrez le menu Frita Zone : burgers, pizzas, tacos et frites. Consultez nos prix et commandez sur WhatsApp.">
+  <title>Frita Zone | Fast-Food, Burgers, Pizzas, Tacos à Taroudant</title>
+  <meta name="description" content="Découvrez le menu Frita Zone à Taroudant : burgers gourmands, pizzas, tacos et frites dorées signatures. Consultez nos prix et commandez facilement sur WhatsApp.">
   <link rel="stylesheet" href="index.css">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#850006">
+  <link rel="apple-touch-icon" href="images.frita/Frita Logo.jpg">
+  <!-- Open Graph / Réseaux sociaux & WhatsApp -->
+  <meta property="og:type" content="restaurant">
+  <meta property="og:site_name" content="Frita Zone">
+  <meta property="og:title" content="Frita Zone | Fast-Food, Burgers, Pizzas, Tacos à Taroudant">
+  <meta property="og:description" content="Burgers gourmands, tacos savoureux, pizzas dorées et frites croustillantes à Taroudant. Commandez facilement sur WhatsApp.">
+  <meta property="og:image" content="images.frita/hero-food.jpg">
+  <meta property="og:locale" content="fr_FR">
+  <!-- Données structurées SEO Local Google -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FastFoodRestaurant",
+    "name": "Frita Zone",
+    "image": "images.frita/hero-food.jpg",
+    "telephone": "+212638295783",
+    "priceRange": "12 DH - 55 DH",
+    "servesCuisine": ["Burgers", "Pizzas", "Tacos", "Fast Food"],
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "F4FC+8GC",
+      "addressLocality": "Taroudant",
+      "addressCountry": "MA"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        "opens": "12:00",
+        "closes": "02:00"
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <header class="site-header">
@@ -22,8 +58,64 @@
       </a>
     </nav>
   </header>
-  <main id="accueil" class="background" aria-label="Bienvenue chez Frita Zone">
-    <div class="hero-content">
+  <main id="accueil" class="hero-section" aria-label="Bienvenue chez Frita Zone">
+    <div class="hero-container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="status-indicator" id="hero-status-indicator"></span>
+          <span id="hero-status-text">🟢 Ouvert actuellement • Taroudant</span>
+        </div>
+        <h1 class="hero-title">
+          <span>Le Vrai Goût du</span>
+          <span class="hero-highlight">Croustillant &amp; Gourmand</span>
+        </h1>
+        <p class="hero-subtitle">
+          Burgers savoureux, pizzas dorées, tacos généreux et nos célèbres frites croustillantes préparées avec passion à Taroudant.
+        </p>
+        <div class="hero-actions">
+          <a class="hero-btn hero-btn-primary" href="#menu">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Zm1 14.59L8.71 12.3a1 1 0 0 1 1.41-1.41L13 13.76l4.88-4.87a1 1 0 0 1 1.41 1.41Z"/></svg>
+            <span>Découvrir le Menu</span>
+          </a>
+          <a class="hero-btn hero-btn-whatsapp" href="https://wa.me/212638295783?text=Bonjour%20Frita%20Zone%2C%20je%20souhaite%20commander." target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 32 32" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M27 15.5a11 11 0 0 1-16.5 9.5L5 27l1.8-5.5A11 11 0 1 1 27 15.5Z" fill="none" stroke="currentColor" stroke-width="2.3"/><path d="M12 9c-1 0-2 2-1 5 1 4 5 7 8 7 2 0 3-2 2-3l-3-1-1 1c-2-1-4-3-4-5l1-1-1-3Z"/></svg>
+            <span>Commander sur WhatsApp</span>
+          </a>
+        </div>
+        <div class="hero-trust-badges">
+          <div class="trust-badge">
+            <span class="trust-icon">🛵</span>
+            <span>Livraison rapide à Taroudant</span>
+          </div>
+          <div class="trust-badge">
+            <span class="trust-icon">⏱️</span>
+            <span>Prêt en 15-20 min</span>
+          </div>
+          <div class="trust-badge">
+            <span class="trust-icon">⭐</span>
+            <span>100% Frais &amp; Fait Maison</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-image-wrapper">
+          <img src="images.frita/hero-food.jpg" alt="Burgers gourmands, frites dorées, tacos et pizzas Frita Zone" class="hero-image" fetchpriority="high" loading="eager" decoding="async">
+          <div class="floating-badge badge-fries">
+            <span class="floating-badge-icon">🍟</span>
+            <div class="floating-badge-text">
+              <strong>Frites Signatures</strong>
+              <span>Dorées &amp; Croustillantes</span>
+            </div>
+          </div>
+          <div class="floating-badge badge-burger">
+            <span class="floating-badge-icon">🍔</span>
+            <div class="floating-badge-text">
+              <strong>Burgers &amp; Tacos</strong>
+              <span>Recettes généreuses</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </main>
   <section id="menu" class="menu-section" aria-labelledby="menu-title">
@@ -44,6 +136,10 @@
       <a class="menu-category" href="#tacos">
         <svg viewBox="0 0 64 64" aria-hidden="true"><rect x="10" y="18" width="44" height="30" rx="10" fill="currentColor" transform="rotate(-20 32 33)"/><g stroke="#fff7ed" stroke-width="3" stroke-linecap="round"><path d="m22 28 6 16M32 24l6 16M42 21l5 13"/></g></svg>
         <span>Tacos</span>
+      </a>
+      <a class="menu-category" href="#boissons">
+        <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M22 14h20l-3 42H25L22 14Z" fill="currentColor"/><path d="M19 12h26v4H19z" fill="currentColor"/><path d="M38 4v8h-4V4z" fill="#fff7ed"/><path d="M25 28h14" stroke="#fff7ed" stroke-width="3" stroke-linecap="round"/></svg>
+        <span>Boissons</span>
       </a>
     </nav>
     <div class="menu-group" id="pizzas">
@@ -162,6 +258,27 @@
         </figure>
       </div>
     </div>
+    <div class="menu-group" id="boissons">
+      <h3>Nos Boissons Fraîches</h3>
+      <div class="product-grid">
+        <figure class="product-card">
+          <img src="images.frita/boissons.jpg" alt="Canette de soda 33cl bien fraîche." loading="lazy" decoding="async">
+          <figcaption>
+            <div class="product-heading"><h4>Canette Soda 33cl</h4><span class="product-price">7 DH</span></div>
+            <p>Coca-Cola, Fanta, Hawaï ou Poms bien fraîche.</p>
+            <button class="add-to-cart" type="button" data-product="12" data-name="Canette Soda 33cl" data-price="7">Ajouter au panier</button>
+          </figcaption>
+        </figure>
+        <figure class="product-card">
+          <img src="images.frita/boissons.jpg" alt="Bouteille d'eau minérale 50cl." loading="lazy" decoding="async">
+          <figcaption>
+            <div class="product-heading"><h4>Eau Minérale 50cl</h4><span class="product-price">5 DH</span></div>
+            <p>Eau minérale naturelle bien fraîche.</p>
+            <button class="add-to-cart" type="button" data-product="13" data-name="Eau Minérale 50cl" data-price="5">Ajouter au panier</button>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
   </section>
   <dialog id="commande" class="cart-dialog" aria-labelledby="cart-title">
     <div class="cart-layout">
@@ -182,7 +299,10 @@
           <p class="cart-total">Sous-total <strong id="cart-total">0 DH</strong></p>
           <p class="delivery-note">Retrait ou livraison à confirmer avec Frita Zone.</p>
           <button id="checkout-cart" type="button" disabled>Commander 0 DH</button>
-          <button id="continue-shopping" type="button">Continuer à commander</button>
+          <div class="cart-secondary-actions">
+            <button id="continue-shopping" type="button">Continuer à commander</button>
+            <button id="clear-cart" type="button" class="btn-clear-cart">Vider le panier</button>
+          </div>
         </div>
       </div>
     </div>
@@ -202,6 +322,17 @@
         <legend>Méthode de livraison</legend>
         <label><input type="radio" name="delivery" value="pickup" checked> &#192; emporter</label>
         <label><input type="radio" name="delivery" value="delivery"> Livraison, frais à confirmer avec le snack</label>
+      </fieldset>
+      <fieldset class="sauce-options">
+        <legend>Sauces offertes (au choix)</legend>
+        <div class="sauce-grid">
+          <label><input type="checkbox" name="sauce" value="Algérienne"> Algérienne</label>
+          <label><input type="checkbox" name="sauce" value="Samouraï"> Samouraï</label>
+          <label><input type="checkbox" name="sauce" value="Biggy"> Biggy Burger</label>
+          <label><input type="checkbox" name="sauce" value="Mayonnaise"> Mayonnaise</label>
+          <label><input type="checkbox" name="sauce" value="Ketchup"> Ketchup</label>
+          <label><input type="checkbox" name="sauce" value="Sauce Blanche"> Sauce Blanche</label>
+        </div>
       </fieldset>
       <div class="customer-fields">
         <label>Nom complet<input id="customer-name" name="customerName" autocomplete="name" required maxlength="100"></label>
@@ -224,6 +355,7 @@
         <h2 id="contact-title">Frita Zone</h2>
         <address>
           <p>F4FC+8GC, Taroudant</p>
+          <p class="hours-info">🕒 <strong>Ouvert 7j/7 :</strong> 12h00 – 02h00</p>
           <a href="tel:+212638295783">0638295783</a>
         </address>
         <div class="contact-actions">
@@ -245,7 +377,11 @@
       </div>
       <div>
         <h2>Contactez-nous</h2>
-        <address><p>F4FC+8GC, Taroudant</p><a href="tel:+212638295783">0638295783</a></address>
+        <address>
+          <p>F4FC+8GC, Taroudant</p>
+          <p class="hours-info">🕒 <strong>Ouvert 7j/7 :</strong> 12h00 – 02h00</p>
+          <a href="tel:+212638295783">0638295783</a>
+        </address>
       </div>
     </div>
   </footer>
